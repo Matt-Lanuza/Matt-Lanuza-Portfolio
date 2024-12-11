@@ -4,15 +4,16 @@
 }
 
 .navbar-brand {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.75rem;
+  font-family: 'Tiny5', sans-serif;
+  font-size: 60px;
   font-weight: 700;
-  color: #fff;
+  color: #A2C2E3 !important;
 }
 
 .navbar-nav .nav-link {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
+  font-size: 20px;
   color: #ccc;
 }
 
@@ -22,9 +23,16 @@
   border-radius: 5px;
 }
 
-.navbar-toggler-icon {
-  background-color: #fff;
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 76, 153, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-size: 40px;
 }
+
+.navbar .navbar-toggler {
+  border-color: rgba(0, 76, 153, 1.0);
+  border-width: 3px;
+}
+
 
 .navbar-collapse {
   justify-content: flex-end;
