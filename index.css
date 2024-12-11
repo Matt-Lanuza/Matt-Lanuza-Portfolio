@@ -155,35 +155,25 @@ html, body {
   border-color: #0056b3;
 }
 
+.card-img-top {
+  width: 100%; /* Ensure image stretches to fill the card width */
+  height: 300px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
 
 
 
 /* Tools Section Styling */
 #tools {
-  background: url('https://i.pinimg.com/736x/7b/01/61/7b0161be7ab3d0f30a49fc4e7963527f.jpg') no-repeat center center fixed;
-  background-size: cover;
-  animation: moveBackground 30s linear infinite;
-  padding-top: 50px; 
-  padding-bottom: 50px; 
-  margin-top: 50px; 
-  margin-bottom: 50px;
+  background-color: #d0f0c0; 
 }
 
-/* Keyframes for moving background */
-@keyframes moveBackground {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
 
 #tools-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #fff;
+  color: #000 !important;
 }
 
 .logo-icon {
