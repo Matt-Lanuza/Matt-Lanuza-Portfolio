@@ -1,11 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif; /* Ensure a consistent font family */
+}
+
 /* Navbar Styles */
 .navbar {
   background-color: #1d1f22;
+  padding: 15px 0;
 }
 
 .navbar-brand {
   font-family: 'Tiny5', sans-serif;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   color: #A2C2E3 !important;
 }
@@ -13,7 +21,7 @@
 .navbar-nav .nav-link {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   color: #ccc;
 }
 
@@ -24,15 +32,14 @@
 }
 
 .navbar .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 76, 153, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    background-size: 40px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 76, 153, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-size: 40px;
 }
 
 .navbar .navbar-toggler {
   border-color: rgba(0, 76, 153, 1.0);
   border-width: 3px;
 }
-
 
 .navbar-collapse {
   justify-content: flex-end;
@@ -50,4 +57,85 @@
 
 .navbar-nav .nav-link:hover {
   transform: scale(1.05);
+}
+
+
+/* Landing Section */
+#landing {
+  position: relative;
+  background: url('https://t3.ftcdn.net/jpg/06/85/27/34/360_F_685273471_hRRUpiQvtalTsZIePQHf9tr5bSFoowpG.jpg') no-repeat center center fixed;
+  background-size: cover;
+  animation: moveBackground 30s linear infinite;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Text shadow for clarity */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+#name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#position {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #name {
+    font-size: 2.5rem;
+  }
+
+  #position {
+    font-size: 1.2rem;
+  }
+
+  #description {
+    font-size: 1rem;
+    padding: 0 15px; /* Adding some padding for mobile devices */
+  }
+}
+
+
+#projects {
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
