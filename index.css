@@ -1,0 +1,45 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #1d1f22;
+}
+
+.navbar-brand {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: #343a40;
+  border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Optional: Add custom hover animation for links */
+.navbar-nav .nav-link {
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.05);
+}
