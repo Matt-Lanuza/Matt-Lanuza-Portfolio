@@ -1,7 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: 'Montserrat', sans-serif; /* Ensure a consistent font family */
 }
 
@@ -138,4 +137,95 @@ html, body {
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tools Section Styling */
+#tools {
+  background: url('https://i.pinimg.com/736x/7b/01/61/7b0161be7ab3d0f30a49fc4e7963527f.jpg') no-repeat center center fixed;
+  background-size: cover;
+  animation: moveBackground 30s linear infinite; /* Animation for moving background */
+  padding-top: 50px; /* Add some padding at the top */
+  padding-bottom: 50px; /* Add padding at the bottom */
+  margin-top: 50px; /* Add some margin at the top */
+  margin-bottom: 50px; /* Add margin at the bottom */
+}
+
+/* Keyframes for moving background */
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+#tools-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.logo-icon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.logo-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge logo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+@media (max-width: 576px) {
+  #tools-title {
+    font-size: 2rem; /* Adjust title size for smaller screens */
+  }
+}
+
+
+#contact {
+  background-color: #54a3ab;
+  font-size: 20px;
+}
+
+#contact form input {
+  background-color: #FFFFFF;
+  border: 1px solid #000000 !important;
+  border-radius: 0 !important;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 29.26px;
+}
+
+#contact form textarea {
+  background-color: #FFFFFF;
+  border: 1px solid #000000 !important;
+  border-radius: 0 !important; 
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 29.26px;
+}
+
+
+
+#form-btn {
+  background-color: #e46d1b;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 12px 32px 12px 32px;
+  gap: 8px;
+  border-radius: 999px;
+}
+
+
+#contact-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(https://img.pikbest.com/ai/illus_our/20230427/b8877a1ebd924c466b3046b2ea1e1bce.jpg!sw800);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#fb-logo, #linkedin-logo, #gh-logo, #gl-logo {
+  height: 30px;
 }
